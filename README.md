@@ -67,15 +67,6 @@ Send a `POST` request to the `/upload` endpoint with a PDF file attached under t
 $ curl -X POST -F "file=@path_to_pdf_file.pdf" http://127.0.0.1:5000/upload
 ```
 
-#### Example using Python (requests library):
-```python
-import requests
-
-url = "http://127.0.0.1:5000/upload"
-files = {"file": open("path_to_pdf_file.pdf", "rb")}
-response = requests.post(url, files=files)
-
-print(response.json())
 ```
 
 ### Response
